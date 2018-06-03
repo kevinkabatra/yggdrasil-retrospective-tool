@@ -1,0 +1,54 @@
+:root {
+    --font-family: arial;
+    --font-family-backup: sans-serif;
+    --color-dark-grey: #5a5a5a;
+}
+
+.header {
+    overflow: hidden;
+    background-color: var(--color-dark-grey);
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--font-family), var(--font-family-backup);
+    padding: 12px;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #d3d3d3;
+    color: white;
+}
+
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
